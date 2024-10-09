@@ -12,6 +12,7 @@
   padding-block: 1rem;
   position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 .innerNav {
@@ -95,30 +96,30 @@
 } */
 
 .bannerImg {
-  background-color: #fff;
+  background-color: orange;
   height: 50vh;
-  width: 40%;
+  width: 30%;
+  border-radius: 20px;
 }
 
-.bannerImg > Img {
+/* .bannerImg > Img {
   width: 100%;
   height: 100%;
   border-radius: 100px;
   object-fit: cover;
-}
+} */
 .bgBlue {
-  width: 100%;
-  height: 100%;
-  margin-top: 2rem;
-  margin-left: 2rem;
-  background-color: #674ac7;
+  width: 300px;
+  height: 400px;
+  margin-top: 1rem;
+  margin-left: 1rem;
 }
-.bgBlue > Img,
-.bannerImg > Img {
+.bgBlue > Img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+
 /* styling for services */
 
 .services {
@@ -287,17 +288,23 @@
 /* responsive code */
 @media (min-width: 260px) and (max-width: 460px) {
   .innerNav {
-    border: 2px solid white;
-    width: calc(100% - 30px);
+    /* border: 2px solid white;
+    width: calc(100% - 30px); */
+    padding: 0 10px;
+  }
+  .navItems {
+    display: none;
+    flex-direction: column;
   }
   .hamburger {
     display: block;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 900px;
     color: #674ac7;
+    cursor: pointer;
   }
 
-  .navRight {
+  /* .navRight {
     position: absolute;
     width: 340px;
     padding: 1.8rem;
@@ -309,6 +316,18 @@
     border-bottom: 4px solid #fbc449;
     transform: translate(100%, 0);
     transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  } */
+
+  #toggle:checked + .navRight .navItems {
+    display: flex;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #f0ecff;
+    flex-direction: column;
+    width: 100%;
+    padding: 1.5rem;
+    border-top: 3px solid #fbc449;
   }
 
   .banner {
@@ -321,7 +340,6 @@
     width: calc(100% - 30px);
   }
   .services {
-    border: 2px solid blue;
     flex-direction: column;
     width: calc(100% - 30px);
     gap: 20px;
@@ -439,5 +457,43 @@
     border-top: 5px solid #ff8c00;
     margin-top: 20px;
     color: #ff8c00;
+  }
+}
+
+@media (max-width: 480px) {
+  .innerNav h1 {
+    font-size: 18px;
+  }
+
+  .navItems a {
+    font-size: 12px;
+  }
+
+  .bannerContent h1 {
+    font-size: 20px;
+  }
+
+  .bannerContent p {
+    font-size: 12px;
+  }
+
+  .services {
+    padding: 1rem;
+  }
+
+  .serviceCard {
+    width: 100%;
+  }
+
+  .secTwo,
+  .secThree,
+  .secFour,
+  .secFive,
+  .secSix {
+    padding: 2rem;
+  }
+
+  .foot {
+    font-size: 12px;
   }
 }
