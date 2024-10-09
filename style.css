@@ -146,7 +146,6 @@
 /* base styling /secTwo */
 
 .secTwo {
-  background-color: white;
   margin: 5rem;
   padding-block: 4rem;
 }
@@ -252,21 +251,65 @@
   color: brown;
   margin: 1rem;
 }
+/* contact */
 .secFive {
-  background-color: white;
-  margin: 5rem;
-  padding-block: 4rem;
-  font-style: italic;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: x-small;
+  padding: 40px;
+  background-color: #f9f9f9;
 }
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* Space between form and image */
+}
+
 .contactContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 200px; /* Space between the form and image */
+}
+
+.contactLeft,
+.contactRight {
+  flex: 1; /* Both take equal width */
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contactImage img {
+  width: 300px;
+  height: 500px;
+}
+#message {
+  width: 400px;
+  height: 300px;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: orange;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 10px;
+}
+
+button[type="submit"]:hover {
+  background-color: black;
+}
+
+/* Contact Information Styling */
+.contactInfo {
   list-style: none;
   padding: 0;
-}
-.contactContent li {
-  color: brown;
-  margin: 1rem;
+  margin-top: 2rem;
 }
 
 /* footer */
@@ -284,6 +327,8 @@
   margin-top: 20px;
   color: #ff8c00;
 }
+
+/* RESPONSIVENESS */
 
 /* responsive code */
 @media (min-width: 260px) and (max-width: 460px) {
@@ -335,9 +380,14 @@
     gap: 20px;
   }
 
-  .bannerImg,
+  .bannerImg {
+    width: calc(100% - 30px);
+  }
   .bannerContent {
     width: calc(100% - 30px);
+    background-color: #1e1e1e;
+    color: #ff8c00;
+    font-weight: 200;
   }
   .services {
     flex-direction: column;
@@ -346,6 +396,8 @@
   }
   .serviceCard {
     width: 100%;
+    background-color: #1e1e1e;
+    color: #ff8c00;
   }
   .serviceCard > p {
     font-size: small;
@@ -357,9 +409,12 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   .secTwo {
-    background-color: blanchedalmond;
+    background-color: #1e1e1e;
+    color: #fbc449;
     margin: 5rem;
     padding-block: 4rem;
+    font-size: medium;
+    font-weight: 300;
   }
   .base {
     flex-direction: column;
@@ -409,7 +464,8 @@
 
   /* educa sec */
   .secThree {
-    background-color: white;
+    background-color: #1e1e1e;
+    color: #ff8c00;
     margin: 5rem;
     padding-block: 4rem;
     font-style: italic;
@@ -422,12 +478,13 @@
   }
 
   .eduContent li {
-    color: brown;
+    color: orange;
     margin: 1rem;
   }
   /* skills */
   .secFour {
-    background-color: white;
+    background-color: #1e1e1e;
+    color: #ff8c00;
     margin: 5rem;
     padding-block: 4rem;
     font-style: italic;
@@ -445,9 +502,10 @@
 
   /* footer */
   .secFive {
-    background-color: blanchedalmond;
+    background-color: #1e1e1e;
     margin: 5rem;
     padding-block: 4rem;
+    color: #ff8c00;
   }
 
   .foot {
@@ -459,41 +517,54 @@
     color: #ff8c00;
   }
 }
+/* Responsive styling for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .contactContent {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px; /* Reduces space between form and image */
+  }
 
+  #message {
+    width: 100%; /* Full width on smaller screens */
+    height: auto;
+  }
+
+  .contactImage img {
+    width: 250px;
+    height: auto; /* Auto adjust height for smaller screen */
+  }
+
+  button[type="submit"] {
+    width: 100%; /* Full width submit button */
+  }
+}
+
+/* Responsive styling for mobile devices (max-width: 480px) */
 @media (max-width: 480px) {
-  .innerNav h1 {
-    font-size: 18px;
+  .contactContent {
+    flex-direction: column;
+    gap: 30px;
   }
 
-  .navItems a {
-    font-size: 12px;
-  }
-
-  .bannerContent h1 {
-    font-size: 20px;
-  }
-
-  .bannerContent p {
-    font-size: 12px;
-  }
-
-  .services {
-    padding: 1rem;
-  }
-
-  .serviceCard {
+  #message {
     width: 100%;
+    height: auto;
   }
 
-  .secTwo,
-  .secThree,
-  .secFour,
-  .secFive,
-  .secSix {
-    padding: 2rem;
-  }
+  @media (max-width: 480px) {
+    .contactForm button {
+      width: 100%;
+      text-align: center;
+    }
+    .contactImage img {
+      width: 200px;
+      height: auto; /* More compact on mobile */
+    }
 
-  .foot {
-    font-size: 12px;
+    button[type="submit"] {
+      width: 100%;
+      padding: 15px; /* More padding for mobile */
+    }
   }
 }
