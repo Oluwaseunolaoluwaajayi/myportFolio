@@ -177,6 +177,21 @@
   justify-content: space-between;
   margin: 0.1rem;
 }
+.download-progress-bar {
+  width: 100%;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-top: 10px;
+  height: 20px;
+}
+
+.progress-bar {
+  height: 100%;
+  width: 0;
+  background-color: yellow;
+  transition: width 0.3s;
+}
 .baseContent > button {
   margin-top: 1rem;
   background-color: #674ac7;
