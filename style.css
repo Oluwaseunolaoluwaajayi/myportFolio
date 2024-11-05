@@ -382,10 +382,12 @@ button[type="submit"]:hover {
 /* RESPONSIVENESS */
 
 /* responsive code */
+/* Responsive styling for mobile devices (min-width: 260px) and (max-width: 460px) */
+
 @media (min-width: 260px) and (max-width: 460px) {
   .innerNav {
-    /* border: 2px solid white;
-    width: calc(100% - 30px); */
+    /* border: 2px solid white; */
+    width: calc(100% - 30px);
     padding: 0 10px;
   }
   .navItems {
@@ -396,7 +398,8 @@ button[type="submit"]:hover {
     display: block;
     font-size: 25px;
     font-weight: 900px;
-    color: #674ac7;
+    /* color: #674ac7; */
+    color: #2196f3;
     cursor: pointer;
   }
 
@@ -420,15 +423,18 @@ button[type="submit"]:hover {
     top: 60px;
     right: 0;
     background: #f0ecff;
+    background: #455a64;
     flex-direction: column;
     width: 100%;
     padding: 1.5rem;
-    border-top: 3px solid #fbc449;
+    border-top: 3px solid yellow;
   }
 
   .banner {
     flex-direction: column-reverse;
     gap: 20px;
+    background-color: #212121;
+    /* color: #f7f7f7; */
   }
 
   .bannerImg {
@@ -436,19 +442,22 @@ button[type="submit"]:hover {
   }
   .bannerContent {
     width: calc(100% - 30px);
-    background-color: #1e1e1e;
-    color: #ff8c00;
+    background-color: black;
+    color: white;
+
     font-weight: 200;
   }
   .services {
     flex-direction: column;
     width: calc(100% - 30px);
     gap: 20px;
+    background-color: black;
+    color: #f7f7f7;
   }
   .serviceCard {
     width: 100%;
-    background-color: #1e1e1e;
-    color: #ff8c00;
+    background-color: #212121;
+    color: white;
   }
   .serviceCard > p {
     font-size: small;
@@ -460,8 +469,8 @@ button[type="submit"]:hover {
     font-family: Arial, Helvetica, sans-serif;
   }
   .secTwo {
-    background-color: #1e1e1e;
-    color: #fbc449;
+    background-color: black;
+    color: #f7f7f7;
     margin: 5rem;
     padding-block: 4rem;
     font-size: medium;
@@ -479,10 +488,12 @@ button[type="submit"]:hover {
   .baseContent > h1 {
     font-size: x-large;
     font-weight: 700;
+    color: #2196f3;
   }
   .baseContent > p {
     font-size: xx-small;
     font-style: italic;
+    color: #f7f7f7;
   }
   .progress {
     margin-top: 2rem;
@@ -500,23 +511,31 @@ button[type="submit"]:hover {
     object-fit: cover;
   }
   .but {
-    border: 5px solid orange;
+    border: 5px solid #f7dc6f;
     margin: 3rem;
     padding: 10px;
-    background-color: #1e1e1e;
-    color: orange;
+    background-color: #212121;
+    color: #f7dc6f;
     border-radius: 50px;
   }
   .but :hover {
-    background-color: whitesmoke;
+    background-color: #f7f7f7;
     transition: background-color 0.3s ease;
     cursor: pointer;
   }
 
   /* educa sec */
   .secThree {
-    background-color: #1e1e1e;
+    border-end-end-radius: 2px solid red;
+    /* background-color: #1e1e1e;
     color: #ff8c00;
+    margin: 5rem;
+    padding-block: 4rem;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-small; */
+    background-color: black;
+    color: #f7f7f7;
     margin: 5rem;
     padding-block: 4rem;
     font-style: italic;
@@ -526,17 +545,22 @@ button[type="submit"]:hover {
   .eduSec {
     list-style: none;
     padding: 0;
+    background-color: black;
   }
 
   .eduContent li {
-    color: orange;
+    color: #2196f3;
+
     margin: 1rem;
   }
   /* skills */
   .secFour,
   .secSeven {
-    background-color: #1e1e1e;
-    color: #ff8c00;
+    /* background-color: #1e1e1e;
+    color: #ff8c00; */
+    background-color: black;
+    color: #f7f7f7;
+
     margin: 5rem;
     padding-block: 4rem;
     font-style: italic;
@@ -550,25 +574,24 @@ button[type="submit"]:hover {
   }
   .skills li,
   .projects li {
-    color: brown;
+    color: #f7dc6f;
     margin: 1rem;
   }
 
   /* footer */
   .secFive {
-    background-color: #1e1e1e;
+    background-color: #212121;
     margin: 5rem;
     padding-block: 4rem;
-    color: #ff8c00;
+    color: #f7f7f7;
   }
 
   .foot {
     text-align: center;
     padding: 10px 0;
-    background-color: #1e1e1e;
-    border-top: 5px solid #ff8c00;
+    background-color: #212121;
+    border-top: 5px solid #2196f3;
     margin-top: 20px;
-    color: #ff8c00;
   }
 }
 /* Responsive styling for tablets (max-width: 768px) */
