@@ -189,12 +189,12 @@
 .progress-bar {
   height: 100%;
   width: 0;
-  background-color: yellow;
+  background-color: black;
   transition: width 0.3s;
 }
 .baseContent > button {
   margin-top: 1rem;
-  background-color: #674ac7;
+  background-color: blue;
   padding: 0.4rem 1rem;
   color: #fff;
   text-transform: capitalize;
