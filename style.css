@@ -254,8 +254,10 @@
 }
 
 .eduContent li {
-  color: brown;
+  color: black;
   margin: 1rem;
+  font-size: large;
+  font-weight: 300;
 }
 /* skills */
 .secFour {
@@ -275,8 +277,10 @@
   padding: 0;
 }
 .skills li {
-  color: brown;
+  color: black;
   margin: 1rem;
+  font-size: medium;
+  font-weight: 300;
 }
 /* contact */
 .secFive {
