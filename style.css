@@ -10,7 +10,7 @@
 .topmostNav {
   background-color: #f0ecff;
   padding-block: 1rem;
-  position: fixed;
+  position: sticky;
   width: 100%;
   z-index: 10;
 }
@@ -390,7 +390,7 @@ button[type="submit"]:hover {
   padding-block: 1rem;
 }
 
-/* RESPONSIVENESS */
+/* RESPONSIVENESS navbar*/
 @media (min-width: 260px) and (max-width: 460px) {
   .innerNav {
     width: calc(100% - 30px);
@@ -632,7 +632,7 @@ button[type="submit"]:hover {
   }
 
   .baseImg > img {
-    height: 100px;
+    height: 500px;
   }
 }
 @media (max-width: 320px) {
@@ -645,7 +645,7 @@ button[type="submit"]:hover {
   }
 
   .baseImg > img {
-    height: 80px;
+    height: 500px;
   }
 }
 
