@@ -696,19 +696,12 @@ progress {
   .baseContent > p {
     font-size: small;
     font-style: italic;
-    color: #f7f7f7;
+    color: black;
   }
 
   .baseImg {
     width: 100%;
     margin-top: 20px;
-  }
-
-  .baseImg > img {
-    width: 100%;
-    height: 150px;
-    border-radius: 50px;
-    object-fit: cover;
   }
 }
 
