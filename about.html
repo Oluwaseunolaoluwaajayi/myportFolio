@@ -49,8 +49,8 @@
     <main>
       <!-- About Section -->
       <section class="secTwo" id="about">
-        <div class="base genLayout">
-          <div class="baseContent">
+        <div class="banner genLayout">
+          <div class="bannerContent">
             <h6>>> About Me</h6>
             <h1>👍 Trusted Development With Satisfaction</h1>
             <p>
@@ -63,26 +63,25 @@
               I love building small and large business websites and rich,
               interactive web apps with React.
             </p>
-            <div class="progress">
-              <div class="progressinfo">
-                <h4>Product Design</h4>
-                <span>90%</span>
-              </div>
-              <progress max="100" value="90"></progress>
-            </div>
-            <div class="progress">
-              <div class="progressinfo">
-                <h4>UI/UX Design</h4>
-                <span>70%</span>
-              </div>
-              <progress max="100" value="70"></progress>
-            </div>
-            <button id="downloadCVBtn">Download CV ⬇ 📃</button>
-            <div class="download-progress-bar">
-              <div class="progress-bar" id="progressBar"></div>
-            </div>
-          </div>
-          <div class="baseImg">
+            <div class="progress-container">
+  <div class="progress-info">
+    <h4>Product Design</h4>
+    <span>90%</span>
+  </div>
+  <progress max="100" value="90" aria-label="Product Design proficiency: 90%"></progress>
+</div>
+<div class="progress-container">
+  <div class="progress-info">
+    <h4>UI/UX Design</h4>
+    <span>70%</span>
+  </div>
+  <progress max="100" value="70" aria-label="UI/UX Design proficiency: 70%"></progress>
+</div>
+<button id="downloadCVBtn">Download CV ⬇ 📃</button>
+<div class="download-progress-bar">
+  <div class="progress-bar" id="progressBar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="CV download progress"></div>
+</div>
+          <div class="bannerImg">
             <img
               src="./image/oftt.jpg"
               alt="Oluwaseun Ajayi working on a project"
